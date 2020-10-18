@@ -24,7 +24,7 @@ group :jekyll_plugins do
   gem "kramdown-math-katex"
   gem "katex"
   gem "execjs"
-  gem "therubyracer"
+  gem "therubyracer", :platforms => :ruby
   # I use node for what it runs with
 end
 
