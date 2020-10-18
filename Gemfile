@@ -23,10 +23,10 @@ group :jekyll_plugins do
   # no clue if this should be in the jekyll plugins section
   gem "kramdown-math-katex"
   gem "katex"
-  gem "execjs"
-  gem "therubyracer", :platforms => :ruby
-  # I use node for what it runs with
 end
+
+gem "execjs"
+gem "therubyracer", :platforms => :ruby
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
