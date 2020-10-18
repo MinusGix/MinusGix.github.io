@@ -27,9 +27,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  MinusGix
 
 # Build settings
-theme: null
+theme: jekyll-dash
 plugins:
   - jekyll-feed
+  - jekyll/tagging
+  - jekyll-paginate
+  - kramdown-math-katex
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -50,3 +53,33 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+# jekyll-paginate
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# jekyll-tagging (optional)
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+dash:
+  date_format: "%b %-d, %Y"
+
+#  disqus:
+#    shortname: <your-discuss-shortname>
+
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://github.com/Minusgix
+      icon: github-square
+      color: red
+  
+  markdown: kramdown
+
+markdown: kramdown
+kramdown:
+  math_engine: katex
+katex:
