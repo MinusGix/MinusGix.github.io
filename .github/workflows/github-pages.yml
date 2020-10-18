@@ -26,6 +26,8 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
+          jekyll_src: .
+          gem_src: .
           # format_output: true Uses prettier https://prettier.io to format jekyll output HTML.
           # prettier_opts: '{ "useTabs": true }'
           # jekyll_src: sample_site
