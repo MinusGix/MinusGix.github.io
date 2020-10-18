@@ -19,7 +19,7 @@ jobs:
 
     - uses: actions/setup-node@v2-beta
       with:
-        node-verson: '12'
+        node-version: '12'
 
     - uses: helaili/jekyll-action@2.0.4
       env:
