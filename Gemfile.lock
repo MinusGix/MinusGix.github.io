@@ -81,6 +81,7 @@ PLATFORMS
 
 DEPENDENCIES
   execjs
+  jekyll (~> 4.1.1)
   jekyll-dash (~> 2.0.0)
   jekyll-feed (~> 0.15.1)
   jekyll-paginate
